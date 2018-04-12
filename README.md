@@ -35,7 +35,7 @@ I would argue this assigmment supports the idea. We only have the bare minimum t
 - Does form error handling work (Just 1 case)
 - Does create new car work.
 
-We coulda seen alot more. Like: delete, all different errors, more filtering tests, alot more sorting tests and more, testing that when edit all feilds gets changed and so forth.
+We coulda seen alot more. Like: delete, all different errors, more filtering tests, alot more sorting tests and more, testing that when edit all feilds gets changed and so forth. But we should not, they are expensive, slow and big to make, furthermore they might break after a small change.
 
 ### Longevity of GUI tests
 Systems tests as GUI tests are very fragile or vulnerable. This is because that, usualy the UI is the thing that might change the most. One example is porting to mobile, the UI might change alot hence it doesn't work the same. That is a little bit of a problem when it comes to the longevity of GUI tests, because they can very quickly become antiquated. A small change to the GUI can completely destroy any number of tests. Which should be changed, the GUI or the tests?. Most likely the change to the GUI was intentional, so it has to be the tests.
